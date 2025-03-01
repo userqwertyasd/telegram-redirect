@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переход в Telegram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .green {
+            background-color: #28a745; /* Зелёный цвет */
+        }
+        .green:hover {
+            background-color: #218838; /* Тёмно-зелёный при наведении */
+        }
+        .red {
+            background-color: #dc3545; /* Красный цвет */
+        }
+        .red:hover {
+            background-color: #c82333; /* Тёмно-красный при наведении */
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <p>Хотите перейти в Telegram-канал для знакомств?</p>
+    <a class="button green" href="https://t.me/znakomstvavtgk" target="_blank">Да</a>
+    <a class="button red" href="javascript:void(0);" onclick="exitFunction()">Нет</a>
+
+    <script>
+        function exitFunction() {
+            if (confirm("Вы уверены, что хотите выйти?")) {
+                // Дополнительные действия, например, закрыть окно
+                window.close(); // Закрывает текущее окно (работает не во всех браузерах)
+            }
+        }
+    </script>
+</body>
+</html>
